@@ -1,0 +1,88 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0b5fd4;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+input, select, button {
+    width: calc(100% - 20px); /* قلص العرض قليلاً */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #0149AC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #1250a5;
+}
+
+.features {
+    margin-top: 20px;
+    background-color: #2c2c2c;
+}
+
+.features h3 {
+    color: #0b5fd4;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    background: url('check.svg') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+#customGangNameContainer {
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}

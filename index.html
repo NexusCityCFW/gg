@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus City CFW</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nexus City CFW Gangs</h1>
+        <form id="registrationForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="gameName">اسمك باللعبة:</label>
+            <input type="text" id="gameName" name="gameName" required>
+            
+            <label for="discordName">اسم الدسكورد الخاص بك:</label>
+            <input type="text" id="discordName" name="discordName" required>
+            
+            <label for="employment">هل أنت موظف في أحد القطاعات؟</label>
+            <select id="employment" name="employment" required>
+                <option value="yes">نعم</option>
+                <option value="no">لا</option>
+            </select>
+            
+            <label for="packageType">نوع الحزمة:</label>
+            <select id="packageType" name="packageType" required>
+                <option value="free">Free</option>
+                <option value="premium">Premium 15$</option>
+            </select>
+            
+            <div id="packageFeatures">
+                <div id="freeFeatures" class="features">
+                    <h3>ميزات الحزمة المجانية:</h3>
+                    <ul>
+                        <li>فتح العصابة من 24 ساعة إلى يومين</li>
+                        <li>دعم مبدائي للخزنة فقط في البداية</li>
+                        <li>مسابقات شهرية</li>
+                    </ul>
+                </div>
+                <div id="premiumFeatures" class="features" style="display: none;">
+                    <h3>ميزات الحزمة المميزة:</h3>
+                    <ul>
+                        <li>فتح عصابة في أقل من 24 ساعة</li>
+                        <li>دعم مبدائي و اسبوعي للخزنة</li>
+                        <li>أضافة مركبتين خاصة</li>
+                        <li>مسابقات شهرية في حال الفوز الجوائز تصبح دبل</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <label for="gangName">اسم العصابة:</label>
+            <select id="gangName" name="gangName" required>
+                <option value="lostmc">LostMC</option>
+                <option value="ballas">Ballas - محجوزة</option>
+                <option value="vagos">Vagos</option>
+                <option value="cartel">Cartel</option>
+                <option value="families">Families</option>
+                <option value="triads">Triads</option>
+                <option value="marabunta">Marabunta</option>
+                <option value="custom">مخصص</option>
+            </select>
+            
+            <div id="customGangNameContainer" style="display: none;">
+                <label for="customGangName">اكتب اسمها المخصص:</label>
+                <input type="text" id="customGangName" name="customGangName">
+            </div>
+            
+            <label for="memberCount">عدد الأعضاء:</label>
+            <input type="number" id="memberCount" name="memberCount" required>
+            
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                أتعهد بعدم اختراق القوانين
+            </label>
+            
+            <button type="submit">تقديم</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
